@@ -1,0 +1,164 @@
+{
+  "1": {
+    "text": "The processor shall not engage a sub-processor without a prior specific or general written authorization of the controller.",
+    "symbolic": "&forbidden{engage_sub_processor} :- role(processor), not written_authorization(controller).",
+    "atoms": [
+      "role(processor)",
+      "written_authorization(controller)",
+      "engage_sub_processor"
+    ]
+  },
+  "2": {
+    "text": "In case of general written authorization, the processor shall inform the controller of any intended changes concerning the addition or replacement of sub-processors.",
+    "symbolic": "&obligatory{inform_controller} :- role(processor), general_written_authorization, intended_changes_addition_replacement_subprocessor.",
+    "atoms": [
+      "role(processor)",
+      "general_written_authorization",
+      "intended_changes_addition_replacement_subprocessor",
+      "inform_controller"
+    ]
+  },
+  "3": {
+    "text": "The processor shall process personal data only on documented instructions from the controller.",
+    "symbolic": "&obligatory{process_personal_data_only_documented_instructions_controller} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "process_personal_data_only_documented_instructions_controller"
+    ]
+  },
+  "4": {
+    "text": "If the processor requires by Union or Member State law to process personal data without instructions and law does not prohibit informing the controller on grounds of public interest, the processor shall inform the controller of that legal requirement before processing.",
+    "symbolic": "&obligatory{inform_controller_legal_requirement_before_processing} :- role(processor), requires_processsing_personal_data_without_instructions, not law_prohibited_informing_controller.",
+    "atoms": [
+      "role(processor)",
+      "requires_processsing_personal_data_without_instructions",
+      "law_prohibited_informing_controller",
+      "inform_controller_legal_requirement_before_processing"
+    ]
+  },
+  "5": {
+    "text": "The processor shall ensure that persons authorized to process personal data have committed them- selves to confidentiality or are under an appropriate statutory obligation of confidentiality.",
+    "symbolic": "&obligatory{ensure_persons_authorized_process_personal_data_commited_confidentiality} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "ensure_persons_authorized_process_personal_data_commited_confidentiality"
+    ]
+  },
+  "6": {
+    "text": "The processor shall take all measures required pursuant to Article 32 or to ensure the security of processing.",
+    "symbolic": "&obligatory{take_measures_ensure_security_processing} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "take_measures_ensure_security_processing"
+    ]
+  },
+  "7": {
+    "text": "The processor shall assist the controller in fulfilling its obligation to respond to requests for exercising the data subject\u2019s rights.",
+    "symbolic": "&obligatory{assist_controller_fulfilling_obligations} :- role(processor), request_data_subject_rights.",
+    "atoms": [
+      "role(processor)",
+      "request_data_subject_rights",
+      "assist_controller_fulfilling_obligations"
+    ]
+  },
+  "8": {
+    "text": "The processor shall assist the controller in ensuring the security of processing.",
+    "symbolic": "&obligatory{assist_controller_ensuring_security_of_processing} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "assist_controller_ensuring_security_of_processing"
+    ]
+  },
+  "9": {
+    "text": "The processor shall assist the controller in notifying a personal data breach to the supervisory authority.",
+    "symbolic": "&obligatory{assist_notify_data_breach_authority} :- role(processor).",
+    "atoms": [
+      "assist_notify_data_breach_authority",
+      "role(processor)"
+    ]
+  },
+  "10": {
+    "text": "The processor shall assist the controller in communicating a personal data breach to the data subject.",
+    "symbolic": "&obligatory{assist_controller_communicate_data_breach_data_subject} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "assist_controller_communicate_data_breach_data_subject"
+    ]
+  },
+  "11": {
+    "text": "The processor shall assist the controller in ensuring compliance with the obligations pursuant to data protection impact assessment.",
+    "symbolic": "&obligatory{assist_controller_ensuring_compliance_data_protection_impact_assessment} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "assist_controller_ensuring_compliance_data_protection_impact_assessment"
+    ]
+  },
+  "12": {
+    "text": "The processor shall assist the controller in consulting the supervisory authorities prior to processing where the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.",
+    "symbolic": "&obligatory{assist_controller_consulting_authorities_prior_processing} :- role(processor), processing_results_high_risk_no_measures_mitigate_controller.",
+    "atoms": [
+      "role(processor)",
+      "processing_results_high_risk_no_measures_mitigate_controller",
+      "assist_controller_consulting_authorities_prior_processing"
+    ]
+  },
+  "13": {
+    "text": "The processor shall return or delete all personal data to the controller after the end of the provision of services relating to processing.",
+    "symbolic": "&obligatory{return_or_delete_personal_data_controller} :- role(processor), end_provision_services_processing.",
+    "atoms": [
+      "role(processor)",
+      "end_provision_services_processing",
+      "return_or_delete_personal_data_controller"
+    ]
+  },
+  "14": {
+    "text": "The processor shall immediately inform the controller if an instruction infringes the GDPR or other data protection provisions.",
+    "symbolic": "&obligatory{inform_controller} :- role(processor), instruction_infriges_data_protection_provision.",
+    "atoms": [
+      "role(processor)",
+      "instruction_infriges_data_protection_provision",
+      "inform_controller"
+    ]
+  },
+  "15": {
+    "text": "The processor shall make available to the controller information necessary to demonstrate compliance with the obligations Article 28 in GDPR.",
+    "symbolic": "&obligatory{provide_information_controller_demonstrate_compliance} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "provide_information_controller_demonstrate_compliance"
+    ]
+  },
+  "16": {
+    "text": "The processor shall allow for and contribute to audits, including inspections, conducted by the controller or another auditor mandated by the controller.",
+    "symbolic": "&obligatory{allow_contribute_audits_by_controller_or_other_auditor} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "allow_contribute_audits_by_controller_or_other_auditor"
+    ]
+  },
+  "17": {
+    "text": "The processor shall impose the same obligations on the engaged sub-processors by way of contract or other legal act under Union or Member State law.",
+    "symbolic": "&obligatory{impose_same_obligations_on_engaged_subprocessors} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "impose_same_obligations_on_engaged_subprocessors"
+    ]
+  },
+  "18": {
+    "text": "The processor shall remain fully liable to the controller for the performance of sub-processor\u2019s obligations.",
+    "symbolic": "&obligatory{remain_liable_to_controller_subprocessor_obligations} :- role(processor).",
+    "atoms": [
+      "role(processor)",
+      "remain_liable_to_controller_subprocessor_obligations"
+    ]
+  },
+  "19": {
+    "text": "When assessing the level of security, the processor shall take into account the risk of accidental or unlawful destruction, loss, alternation, unauthorized disclosure of or access to the personal data transmitted, stored or processed.",
+    "symbolic": "&obligatory{take_into_account_data_breach_risk} :- role(processor), assess_level_security.",
+    "atoms": [
+      "role(processor)",
+      "assess_level_security",
+      "take_into_account_data_breach_risk"
+    ]
+  }
+}

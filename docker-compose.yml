@@ -1,0 +1,40 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: gdpr-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_ORIGINS=*
+    restart: unless-stopped
+    # Uncomment the following lines if you have GPU support
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  gdpr-checker:
+    build: .
+    container_name: gdpr-checker
+    depends_on:
+      - ollama
+    volumes:
+      - ./data:/app/data:ro
+      - ./results:/app/results
+      - ./config:/app/config:ro
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - PYTHONPATH=/app
+    working_dir: /app
+    # Override the default command to keep container running
+    command: tail -f /dev/null
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+    driver: local

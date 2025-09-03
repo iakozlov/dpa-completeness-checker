@@ -1,0 +1,19 @@
+1. The processor shall not engage a sub-processor without a prior specific or general written authorization of the controller.
+2. In case of general written authorization, the processor shall inform the controller of any intended changes concerning the addition or replacement of sub-processors.
+3. The processor shall process personal data only on documented instructions from the controller.
+4. If the processor requires by Union or Member State law to process personal data without instructions and law does not prohibit informing the controller on grounds of public interest, the processor shall inform the controller of that legal requirement before processing.
+5. The processor shall ensure that persons authorized to process personal data have committed them- selves to confidentiality or are under an appropriate statutory obligation of confidentiality.
+6. The processor shall take all measures required pursuant to Article 32 or to ensure the security of processing.
+7. The processor shall assist the controller in fulfilling its obligation to respond to requests for exercising the data subject’s rights.
+8. The processor shall assist the controller in ensuring the security of processing.
+9. The processor shall assist the controller in notifying a personal data breach to the supervisory authority.
+10. The processor shall assist the controller in communicating a personal data breach to the data subject.
+11. The processor shall assist the controller in ensuring compliance with the obligations pursuant to data protection impact assessment.
+12. The processor shall assist the controller in consulting the supervisory authorities prior to processing where the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.
+13. The processor shall return or delete all personal data to the controller after the end of the provision of services relating to processing.
+14. The processor shall immediately inform the controller if an instruction infringes the GDPR or other data protection provisions.
+15. The processor shall make available to the controller information necessary to demonstrate compliance with the obligations Article 28 in GDPR.
+16. The processor shall allow for and contribute to audits, including inspections, conducted by the controller or another auditor mandated by the controller.
+17. The processor shall impose the same obligations on the engaged sub-processors by way of contract or other legal act under Union or Member State law.
+18. The processor shall remain fully liable to the controller for the performance of sub-processor’s obligations.
+19. When assessing the level of security, the processor shall take into account the risk of accidental or unlawful destruction, loss, alternation, unauthorized disclosure of or access to the personal data transmitted, stored or processed.
